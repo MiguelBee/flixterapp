@@ -2,6 +2,9 @@
 @import "bootstrap";
 @import url('https://fonts.googleapis.com/css?family=Griffy');
 
+body {
+    background-color: #e8e181;
+}
 a.navbar-brand {
     font-family: 'Griffy', cursive;
     font-size: 35px;
@@ -13,4 +16,37 @@ a.navbar-brand {
     border-color: #9FB0B5;
     font-family:'Griffy', cursive;
     box-shadow: 0px 1px 3px #2a2a2a;
+}
+
+.hero {
+    background: image_url('hero.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 500px;
+    box-shadow: 0px 3px 8px #2a2a2a;
+}
+
+.frosty {
+    background: rgba(0,0,0,0.5);
+    color: white;
+}
+
+.frosty h1 {
+    color: white;
+    font-weight:100;
+    font-family: 'Griffy', cursive;
+    text-shadow: rgba(0,0,0,0.95) 1px 1px;
+}
+
+.frosty h2 {
+    color: white;
+    font-weight: 200; 
+    font-family: 'Griffy', cursive;
+    text-shadow: rgba(0,0,0,0.95) 1px 1px;
+}
+
+.btn {
+    border-radius: 0;
 }
