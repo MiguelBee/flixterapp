@@ -1,2 +1,16 @@
 // Custom bootstrap variables must be set or imported *before* bootstrap.
 @import "bootstrap";
+@import url('https://fonts.googleapis.com/css?family=Griffy');
+
+a.navbar-brand {
+    font-family: 'Griffy', cursive;
+    font-size: 35px;
+    font-weight: 200;
+}
+
+.navbar {
+    border-style: solid;
+    border-color: #9FB0B5;
+    font-family:'Griffy', cursive;
+    box-shadow: 0px 1px 3px #2a2a2a;
+}
