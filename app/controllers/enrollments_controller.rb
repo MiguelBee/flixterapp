@@ -10,14 +10,13 @@ class EnrollmentsController < ApplicationController
         email: params[:stripeEmail],
         source: params[:stripeToken]
       )
-        
         charge = Stripe::Charge.create(
             customer: customer.id,
             amount: @amount,
             description: 'Flixter Course Charge',
             currency: 'usd'
           )
-         end
+        end
         current_user.enrollments.create(course: current_course)
         
         redirect_to course_path(current_course)
