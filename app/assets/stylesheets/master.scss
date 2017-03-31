@@ -6,22 +6,17 @@
 body {
     background-color: #e8e181;
 }
-a.navbar-brand {
-    font-family: 'Griffy', cursive;
-    font-size: 30px;
-    font-weight: 200;
-    color: white;
-}
-
-a {
-    font-size: 25px;
-}
-
 .navbar {
     border-style: solid;
     border-color: #9FB0B5;
     font-family:'Griffy', cursive;
     box-shadow: 0px 1px 3px #2a2a2a;
+    font-size: 20px;
+}
+.navbar-inverse a.navbar-brand{
+    font-family: 'Griffy', cursive;
+    font-weight: 100;
+    color: white;
 }
 
 .hero {
@@ -77,6 +72,7 @@ h3 {
   margin-top: 10px;
   padding: 10px;
 }
+
 .booyah-box h2, .booyah-box h1 {
     margin: 10px;
 }
