@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   get 'privacy', to: 'static_pages#privacy'
   get 'careers', to: 'static_pages#careers'
   get 'team', to: 'static_pages#team'
+  get 'about', to: 'static_pages#about'
   resources :courses, only: [:index, :show] do
     resources :enrollments, only: :create
   end

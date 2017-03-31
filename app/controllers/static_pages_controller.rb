@@ -11,4 +11,7 @@ class StaticPagesController < ApplicationController
     
     def careers
     end
+    
+    def about
+    end
 end
