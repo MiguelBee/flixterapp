@@ -6,9 +6,11 @@ Rails.application.routes.draw do
   get 'careers', to: 'static_pages#careers'
   get 'team', to: 'static_pages#team'
   get 'about', to: 'static_pages#about'
+  
   resources :courses, only: [:index, :show] do
     resources :enrollments, only: :create
   end
+  
   resources :lessons, only: [:show]
   namespace :instructor do
     resources :lessons, only: [:update]
@@ -19,7 +21,7 @@ Rails.application.routes.draw do
     
     resources :courses, only: [:new, :create, :show] do
       resources :sections, only: [:create]
-
-      end
     end
   end
+  
+end
